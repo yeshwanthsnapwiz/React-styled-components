@@ -7,7 +7,8 @@ import Form from './formblock/form';
 
 function App({className}) {
   return (
-<FORMWRAP><Form></Form>
+<FORMWRAP>
+  <Form></Form>
 									
 </FORMWRAP>
   );

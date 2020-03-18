@@ -1,57 +1,84 @@
 import React from 'react';
-import {Formgroup, Label} from './formcss';
-import {USERNAME} from './formcss';
-import {Input} from './formcss';
-import {NAME} from './formcss';
-import {UserName} from './formcss';
+import {FormWrapper} from './formcss';
+import {FORMGROUP} from './formcss';
+import {FIRSTINPUT } from './formcss';
+import {Userlabela } from './formcss';
+import {Span } from './formcss';
+import {FIRSTINPUTWRAPPER  } from './formcss';
+import {SECOND} from './formcss';
+import {SECONDINPUT} from './formcss';
+import {Userlabelb} from './formcss';
+import {Nameuser} from './formcss';
 import {ForgotPassword} from './formcss';
-import {PASSWORD} from './formcss';
-import {Password} from './formcss';
 import {Checkbox} from './formcss';
+import {Label} from './formcss';
+import {SPAN } from './formcss';
 import {Register} from './formcss';
 import {Button} from './formcss';
-import {Span} from './formcss';
-
 
 
 export const Form = ({className}) => {
     return (
-       <Formgroup>
+       <FormWrapper>
 
-         
-        <USERNAME style={{marginTop:"35px"}}>
-        <Input  placeholder="Username" type="text"/>
-       
-        <Input className="name" placeholder="Username" type="text"/>
-        </USERNAME>
+<FORMGROUP>
 
+   <FIRSTINPUTWRAPPER     className ="username">
 
-        <NAME>
-        <UserName   placeholder="Username" type="text"/>
-      
-     
-        </NAME>
+    <FIRSTINPUT type="text" className="fname"  name="fname"  />
+    <Userlabela className="label" for="fname">
+    <Span className="namea">Username</Span>
+    </Userlabela >
 
-        <PASSWORD>
-        <Password placeholder="Password" type="password"/>
-        </PASSWORD>
+   </FIRSTINPUTWRAPPER   >
 
+    <FIRSTINPUTWRAPPER   className ="username">
 
-        <ForgotPassword>
+    <FIRSTINPUT type="text" className="fname"  name="fname"  />
+    <Userlabela className="label" for="fname">
+    <Span className="namea">Username</Span>
+    </Userlabela >
+    </FIRSTINPUTWRAPPER  >
+
+</FORMGROUP>
+
+<SECOND className ="usernameb">
+
+    <SECONDINPUT type="text" className="first"  name="fname"  />
+    <Userlabelb className="userlabel" for="fname">
+    <Nameuser className="nameb">Username</Nameuser>
+    </Userlabelb>
+
+</SECOND>
+
+<SECOND className ="usernamea">
+
+    <SECONDINPUT type="password" className="first"  name="fname"  />
+    <Userlabelb className="userlabel" for="fname">
+    <Nameuser className="nameb">Password</Nameuser>
+    </Userlabelb>
+
+</SECOND>
+
+<ForgotPassword>
+
         <Label className="label">
          <Checkbox type="checkbox"  /> 
-        <Span className="checkmark"></Span>
+        <SPAN className="checkmark"></SPAN>
          </Label>
-         <Span className ="rememberme">Remember me</Span>
-        <Span><a href="#">FORGOT PASSWORD</a></Span>
-        </ForgotPassword>
+         <SPAN className ="rememberme">Remember me</SPAN>
+        <SPAN><a href="#">FORGOT PASSWORD</a></SPAN>
 
-        <Register>
-         <Button>REGISTER</Button>
-        </Register>
+</ForgotPassword>
+  
+<Register>
+
+         <Button><a href="#">REGISTER</a></Button>
+            
+</Register>
 
 
-        </Formgroup>
+        </FormWrapper>
     )
 }
 export default Form;
