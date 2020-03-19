@@ -1,17 +1,7 @@
-import React from 'react';
-import {FormWrapper} from './formcss';
-import {FORMGROUP} from './formcss';
-import {FIRSTINPUT } from './formcss';
-import {Userlabela } from './formcss';
-import {Span } from './formcss';
-import {FIRSTINPUTWRAPPER  } from './formcss';
-import {SECOND} from './formcss';
-import {SECONDINPUT} from './formcss';
-import {Userlabelb} from './formcss';
-import {Nameuser} from './formcss';
-import {ForgotPassword} from './formcss';
+import React from 'react'
+import {FormWrapper,FIRSTINPUTWRAPPER,FORMGROUP,FIRSTINPUT,Userlabela,Span} from './formcss';
+import {SECOND,SECONDINPUT,Userlabelb,Nameuser,ForgotPassword,Label} from './formcss';
 import {Checkbox} from './formcss';
-import {Label} from './formcss';
 import {SPAN } from './formcss';
 import {Register} from './formcss';
 import {Button} from './formcss';
@@ -19,44 +9,39 @@ import {Button} from './formcss';
 
 export const Form = ({className}) => {
     return (
-       <FormWrapper>
+        <FormWrapper>
+
 
 <FORMGROUP>
+             <FIRSTINPUTWRAPPER className ="username">
+             <FIRSTINPUT type="text" className="fname"  name="fname"  />
+             <Userlabela className="label" for="fname">
+             <Span className="namea">Username</Span>
+             </Userlabela >
+             </FIRSTINPUTWRAPPER>
 
-   <FIRSTINPUTWRAPPER     className ="username">
-
-    <FIRSTINPUT type="text" className="fname"  name="fname"  />
-    <Userlabela className="label" for="fname">
-    <Span className="namea">Username</Span>
-    </Userlabela >
-
-   </FIRSTINPUTWRAPPER   >
-
-    <FIRSTINPUTWRAPPER   className ="username">
-
-    <FIRSTINPUT type="text" className="fname"  name="fname"  />
-    <Userlabela className="label" for="fname">
-    <Span className="namea">Username</Span>
-    </Userlabela >
-    </FIRSTINPUTWRAPPER  >
-
+             <FIRSTINPUTWRAPPER className ="usernameb">
+             <FIRSTINPUT type="text" className="fname"  name="fname"  />
+             <Userlabela className="label" for="fname">
+             <Span className="namea">Username</Span>
+             </Userlabela >
+             </FIRSTINPUTWRAPPER>          
 </FORMGROUP>
 
-<SECOND className ="usernameb">
+ <SECOND className ="usernamec">
 
-    <SECONDINPUT type="text" className="first"  name="fname"  />
-    <Userlabelb className="userlabel" for="fname">
-    <Nameuser className="nameb">Username</Nameuser>
-    </Userlabelb>
+           <SECONDINPUT type="text" className="first"  name="fname"  />
+            <Userlabelb className="userlabel" for="fname">
+           <Nameuser className="nameb">Username</Nameuser>
+           </Userlabelb>
 
 </SECOND>
+<SECOND className ="usernamed">
 
-<SECOND className ="usernamea">
-
-    <SECONDINPUT type="password" className="first"  name="fname"  />
-    <Userlabelb className="userlabel" for="fname">
-    <Nameuser className="nameb">Password</Nameuser>
-    </Userlabelb>
+<SECONDINPUT type="text" className="first"  name="fname"  />
+ <Userlabelb className="userlabel" for="fname">
+<Nameuser className="nameb">Username</Nameuser>
+</Userlabelb>
 
 </SECOND>
 
@@ -70,7 +55,6 @@ export const Form = ({className}) => {
         <SPAN><a href="#">FORGOT PASSWORD</a></SPAN>
 
 </ForgotPassword>
-  
 <Register>
 
          <Button><a href="#">REGISTER</a></Button>
@@ -81,6 +65,6 @@ export const Form = ({className}) => {
         </FormWrapper>
     )
 }
+
+
 export default Form;
-
-
