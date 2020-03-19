@@ -7,7 +7,7 @@ import {  faInstagram} from  '@fortawesome/free-brands-svg-icons';
 import { faUpload  } from  '@fortawesome/free-solid-svg-icons';
 import { faTh } from  '@fortawesome/free-solid-svg-icons';
 import { faCaretDown } from  '@fortawesome/free-solid-svg-icons';
-
+import ReactTooltip from 'react-tooltip';
 
 export const Nav = ({children,className}) => {
     return (
@@ -35,9 +35,17 @@ export const Nav = ({children,className}) => {
         </a>
         </LI>
 
-        <LI><FontAwesomeIcon className="twitter"   icon= { faTwitter }/ ></LI>
-        <LI><FontAwesomeIcon className="facebook"  icon= {  faFacebookSquare }/></LI>
-        <LI><FontAwesomeIcon className="instagram" icon= {  faInstagram }/></LI>
+        <LI ><a href="#"><FontAwesomeIcon  data-tip="twitter" data-place="bottom" data-background-color="white" className="twitter" data-text-color="black"   icon= { faTwitter }/ ></a>
+        <ReactTooltip />
+        </LI>
+        <LI><a href="#"><FontAwesomeIcon data-tip="facebook" data-place="bottom" data-background-color="white" className="facebook" data-text-color="black"    icon= {  faFacebookSquare }/>
+        </a>
+        <ReactTooltip />
+        </LI>
+        <LI><a href="#"><FontAwesomeIcon data-tip="instagram" data-place="bottom" data-background-color="white" className="instagram" data-text-color="black"   icon= {  faInstagram }/>
+        </a>
+        <ReactTooltip />
+        </LI>
         </MENU>
 
         </NAVWRAP>
