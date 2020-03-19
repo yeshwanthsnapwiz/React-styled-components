@@ -1,8 +1,7 @@
 import React from 'react'
 import {FormWrapper,FIRSTINPUTWRAPPER,FORMGROUP,FIRSTINPUT,Userlabela,Span} from './formcss';
-import {SECOND,SECONDINPUT,Userlabelb,Nameuser,ForgotPassword,Label} from './formcss';
+import {SECOND,SECONDINPUT,Userlabelb,ForgotPassword,} from './formcss';
 import {Checkbox} from './formcss';
-import {SPAN } from './formcss';
 import {Register} from './formcss';
 import {Button} from './formcss';
 
@@ -32,7 +31,7 @@ export const Form = ({className}) => {
 
            <SECONDINPUT type="text" className="first"  name="fname"  />
             <Userlabelb className="userlabel" for="fname">
-           <Nameuser className="nameb">Username</Nameuser>
+           <span className="nameb">Username</span>
            </Userlabelb>
 
 </SECOND>
@@ -40,19 +39,19 @@ export const Form = ({className}) => {
 
 <SECONDINPUT type="text" className="first"  name="fname"  />
  <Userlabelb className="userlabel" for="fname">
-<Nameuser className="nameb">Username</Nameuser>
+<span className="nameb">Username</span>
 </Userlabelb>
 
 </SECOND>
 
 <ForgotPassword>
 
-        <Label className="label">
+        <label className="label">
          <Checkbox type="checkbox"  /> 
-        <SPAN className="checkmark"></SPAN>
-         </Label>
-         <SPAN className ="rememberme">Remember me</SPAN>
-        <SPAN><a href="#">FORGOT PASSWORD</a></SPAN>
+        <span className="checkmark"></span>
+         </label>
+         <span className ="rememberme">Remember me</span>
+        <span><a href="#">FORGOT PASSWORD</a></span>
 
 </ForgotPassword>
 <Register>

@@ -234,15 +234,6 @@ position:absolute;
 
 `;
 
-export const SPAN = styled.span`
-`;
-
-
-
-export const Label = styled.label`
-`;
-export const Nameuser = styled.span`
-`;
 
 
 
