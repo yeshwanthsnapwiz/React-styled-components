@@ -31,15 +31,15 @@ export const Form = ({className}) => {
 
            <SECONDINPUT type="text" className="first"  name="fname"  />
             <Userlabelb className="userlabel" for="fname">
-           <span className="nameb">Username</span>
+           <span className="nameb">Email</span>
            </Userlabelb>
 
 </SECOND>
 <SECOND className ="usernamed">
 
-<SECONDINPUT type="text" className="first"  name="fname"  />
+<SECONDINPUT type="password" className="first"  name="fname"  />
  <Userlabelb className="userlabel" for="fname">
-<span className="nameb">Username</span>
+<span className="nameb">Password</span>
 </Userlabelb>
 
 </SECOND>
