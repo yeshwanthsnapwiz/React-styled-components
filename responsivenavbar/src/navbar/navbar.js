@@ -89,7 +89,7 @@ export const Navbar = ({className}) => {
          <Li>
           
            <FontAwesomeIcon  className="icon"  icon={ faDotCircle} />
-    <      span className="menu">
+          <span className="menu">
            <A href="#">LAYOUTS</A>
            <FontAwesomeIcon  className="bars"  icon={faCaretDown} />
            <div class="dropdown-content">
