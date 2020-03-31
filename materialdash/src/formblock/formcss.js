@@ -72,9 +72,9 @@ position:relative;
 top:50px;
 @media only screen and (max-width: 680px) {
 flex-direction:column;
- width:90%;
- height:90px;
- left:10%;
+width:90%;
+height:90px;
+left:10%;
 
 
 }
@@ -88,44 +88,37 @@ width:40%;
 height:50px;
 position: relative;
 @media only screen and (max-width: 680px) {
-  width:90%;
-  flex-direction:column;
-
- 
+width:90%;
+flex-direction:column;
 }
 
-.namea  {
+.namea {
 ${name};
-
-
 }
-  .fname:focus{
-  ${inputfocus};
-  }
+
+.fname:focus{
+${inputfocus};
+}
+
+.fname:focus + .label .namea
+{
+transform:translateY(-75%);
+${onfocuslabel};
+}
 
 
-  .fname:focus + .label .namea
-  {
-   transform:translateY(-75%);
-   ${onfocuslabel};
-
-  }
-  .fname:focus + .label::after , .form input:valid + .namea::after  {
-   ${onfocuslabelafter};
- 
-   
-   }
- 
+.fname:focus + .label::after , .form input:valid + .namea::after  {
+${onfocuslabelafter}; 
+} 
 `;
+
+
 export const FIRSTINPUT = styled.input`
 width:100%;
 position: relative;
 top:10px;
 height:30px;
 border:none;
-
-
- 
 `;
 
 
@@ -134,32 +127,30 @@ border:none;
 
 export const Userlabela  = styled.label`
 overflow:hidden;
- position:absolute;
-  color:grey;
-  bottom:4px;
-  left:0%;
-  width:100%;
-  height:100%;
-  pointer-events:none;
-  border-bottom:1px solid lightgrey;
-  &::after {
-  content:"";
-  position:absolute;
-  left:55%;
-  bottom:-1px;
-  height:100%;
-  width:1%;
-  border-bottom:3px solid  #7a00ff;
-  z-index:-1;
-  transition:transform 0.3s ease;
-
+position:absolute;
+color:grey;
+bottom:4px;
+left:0%;
+width:100%;
+height:100%;
+pointer-events:none;
+border-bottom:1px solid lightgrey;
+&::after {
+content:"";
+position:absolute;
+left:55%;
+bottom:-1px;
+height:100%;
+width:1%;
+border-bottom:3px solid  #7a00ff;
+z-index:-1;
+transition:transform 0.3s ease;
   }
   
- 
 `;
-export const Span = styled.span`
- ${label};
 
+export const Span = styled.span`
+${label};
 `;
 
 export const SECOND = styled.div`
@@ -171,16 +162,15 @@ position: relative;
 top:75px;
 left:5%;
 overflow:hidden;
+
 .nameb {
 ${name};
 bottom:18px;
-
-
 }
-  .first:focus{
-    ${inputfocus};
-   
+.first:focus{
+${inputfocus}; 
   }
+
   .first:focus + .userlabel .nameb
   {
    transform:translateY(-80%);
@@ -192,15 +182,14 @@ bottom:18px;
   
  
    }
-   @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 680px) {
   width:90%;
-   left:10%;
+  left:10%;
 
 }
 `;
 
 export const SECONDINPUT = styled.input`
-
 width:90%;
 position: relative;
 top:7px;
@@ -363,7 +352,7 @@ color:white;
 @media screen and (max-width: 680px) {
 
     position: relative;
-     top:180px;
+    top:180px;
  }
 `;
 
@@ -378,7 +367,7 @@ text-decoration:none;
 color:white;
 }
 &:hover {
-  background-color:rgb(122, 0, 255,0.8);
+background-color:rgb(122, 0, 255,0.8);
 
 }
 @media screen and (max-width: 680px) {

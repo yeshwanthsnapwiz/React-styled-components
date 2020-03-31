@@ -60,7 +60,7 @@ const LI = styled.li`
 ${List};
 text-decoration:none;
 &:hover {
-    color:#8343a5;
+color:#8343a5;
 }
 `;
 
@@ -68,7 +68,7 @@ const Li = styled.li`
 ${List};
 font-size:0.9em;
 @media screen and (max-width: 680px) {
-  position: relative;
+position: relative;
 right:9%;
 }
 

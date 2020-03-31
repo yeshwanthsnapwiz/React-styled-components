@@ -45,24 +45,17 @@ height:60px;
 position: relative;
 overflow:hidden;
 .user , .email, .password{
-      position: relative;
-  left: 10%;
-  top:30%;
-  color:grey;
+position: relative;
+left: 10%;
+top:30%;
+color:grey;
 }
-@media only screen and (max-width: 680px) {
-    margin:0px 0px 0px 0px;
- 
- 
-}
+
 .nameb {
 ${name};
-
-
 }
   .first:focus{
     ${inputfocus};
-   
   }
   .first:focus + .userlabel .nameb
   {
@@ -72,9 +65,7 @@ ${name};
   }
   .first:focus + .userlabel::after , .form input:valid + .nameb::after  {
     ${onfocuslabelafter};
- 
    }
-
 `;
 
 
@@ -86,11 +77,9 @@ width:70%;
  left:20%;
  top:20px;
  padding-top:10px;
-border:none;
+ border:none;
 @media only screen and (max-width: 680px) {
   min-width:100%;
-  margin:0px 0px 0px 0px;
- 
 }`;
 
 
@@ -114,18 +103,9 @@ position:absolute;
   z-index:-1;
   transition:transform 0.5s ease;
   @media only screen and (max-width: 680px) {
-   
-    position:absolute;
+  position:absolute;
   left:62%;
-  
-
 }
-}
-@media only screen and (max-width: 680px) {
-   
-    margin:0px 0px 0px 0px;
-   
-
 }
 `;
 
@@ -145,17 +125,17 @@ margin:auto;
 position:relative;
 top:80px;
 border-radius:5px;
-
-
 `;
 ;
+
+
 export const HEAD = styled.div`
-display:flex;
-flex-direction:column;
+  display:flex;
+  flex-direction:column;
   min-width:305px;
   min-height:150px;
   border-radius:3px;
- background-image: linear-gradient(90deg,#a84fb9,#8343a5);
+  background-image: linear-gradient(90deg,#a84fb9,#8343a5);
   position:relative;
   top:-45px;
   box-shadow: 0px 10px 10px 10px rgba(199,172,206,0.3);
@@ -171,10 +151,9 @@ top:30px;
 font-family:Roboto Slab,Times New Roman,serif;
 font-size:16px;
 font-weight:700;
-
 `;
-export const SOCIALLOGO =styled.div`
 
+export const SOCIALLOGO =styled.div`
 display:flex;
 justify-content:center;
 justify-content:space-around;
@@ -189,12 +168,14 @@ top:30px;
     right:50px;
 }
 `;
+
 export const LI =styled.li`
 list-style-type:none;
 color:white;
 font-size:18px;
 text-decoration:none;
 `;
+
 export const FORMSECTION =styled.form`
 width:100%;
 
@@ -203,11 +184,8 @@ width:100%;
 export const FORMGROUP = styled.li`
 list-style-type:none;
 padding-top:10px;
-
 .user, .email, .password
 {
-  
-  
     font-size:23px;
     color:grey;
     min-width:20%;
@@ -215,6 +193,8 @@ padding-top:10px;
 
 }
 `;
+
+
 export const Span =styled.span`
 color:grey;
 font-size:15px;
@@ -235,8 +215,9 @@ border-bottom:1px solid lightgrey;
 
     }
 `;
-export const A =styled.a`
 
+
+export const A =styled.a`
 text-decoration:none;
 position:relative;
 top:30px;
